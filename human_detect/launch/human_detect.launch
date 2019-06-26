@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node name="human_detect_node" pkg="human_detect" type="human_detect" />
+
+  <include file="$(find opencv_apps)/launch/people_detect.launch">
+    <arg name="image" value="/ardrone/front/image_raw"/>
+  </include>
+
+</launch>
